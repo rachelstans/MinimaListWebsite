@@ -42,7 +42,7 @@ I am going to use the required technologies in the following ways.
 
 For this deliverable I added the application structure.
 
-- **HTML pages** - Four HTML pages that represent the ability to login, create an account, and view weekly to-do list.
+- **HTML pages** - Four HTML pages that represent the ability to select between logging in or creating an account, login, create an account, and view weekly to-do list.
 - **Links** - The login page and account creation page automatically links to the weekly to-do list page.
 - **Text** - Each of the to-do items is represented by a textual description.
 - **Images** - I couldn't figure out how to include an image and so I didn't do this.
