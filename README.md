@@ -47,7 +47,7 @@ For this deliverable I added the application structure.
 - **HTML pages** - Four HTML pages that represent the ability to select between logging in or creating an account, login, create an account, and view weekly to-do list.
 - **Links** - From the home page selecting either the "Login" or "Create an account" buttons link to the correct html page. The "Github link" on the home page links to this github repo. The login page and account creation page automatically links to the weekly to-do list page.
 - **Text** - Each of the to-do items is represented by a textual description.
-- **Images** - I couldn't figure out how to include an image because I am going for a minimalist concept so I didn't do this.
+- **Images** - On the home page there is an image of a simple checkmark to match the theme of the website
 - **Login** - Input boxes and submit button for login and account creation.
 - **Database** - The to-do list items represent data pulled from the database.
 - **WebSocket** - The share icon represents the ability to share your to-do list with another user.
