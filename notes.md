@@ -18,3 +18,9 @@ HTML elements are represented with enclosing tags that may enclose other element
     &emsp;&emsp;\</main><br>
   &emsp;\</body><br>
 \</html>
+
+## CSS
+There are three ways that you can associate CSS with HTML.
+- The first way is to use the style attribute of an HTML element and explicitly assign one or more declarations.
+- The next way to associate CSS is to use the HTML style element to define CSS rules within the HTML document. The style element should appear in the head element of the document so that the rules apply to all elements of the document.
+- The final way to associate CSS is to use the HTML link element to create a hyperlink reference to an external file containing CSS rules. The link element must appear in the head element of the document.
