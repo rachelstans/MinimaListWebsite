@@ -5,14 +5,23 @@
         <!-- Tell browsers not to scale the viewport automatically -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MinimaList</title>
+
+        <link rel="stylesheet" href="login.css" />
     </head>
     <body>
+        <header>
+            <div class="title"><h1>MinimaList</h1></div> 
+        </header>
         <main>
-            <h1 id="title">MinimaList</h1>
-            <form action="list.html" method="get">
-                <label id="label">Username: </label> <input type="text" placeholder="Enter Username"><br>
-                <label id="label">Password: </label> <input type="password" placeholder="Enter Password"/><br>
-                <button type="submit">Sign in</button>
+            <form action="list.html" method="get" class="login">
+                <h2>Login</h2>
+                <div class="form-input-material">
+                    <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" class="form-control-material" required />
+                </div>
+                <div class="form-input-material">
+                    <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" class="form-control-material" required />
+                </div>
+                <button type="submit" class="button">Login</button>
               </form>
         </main>
     </body>
