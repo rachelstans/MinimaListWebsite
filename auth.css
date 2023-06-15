@@ -8,13 +8,12 @@ body {
 
 header {
     position: relative;
-    z-index: -1;
     top: 6px;
     color: #8da290;
     font-size: 50px;
 }
 
-.login {
+.auth {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +46,7 @@ h2 {
 
 ::placeholder {
     color: #fff;
+    font-size: 15px;
 }
 
 .button {
