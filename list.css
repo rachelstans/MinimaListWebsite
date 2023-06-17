@@ -11,7 +11,7 @@ header {
     color: #8da290;
     font-size: 25px;
     margin-top: -3.5%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 h2 {
@@ -98,6 +98,7 @@ table {
 .list tr:first-child th {
     font-size: 19px;
     border-bottom: 2px solid #505050;
+    padding-bottom: 8px;
 }
 
 th,
