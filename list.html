@@ -7,120 +7,124 @@
         <!-- Tell browsers not to scale the viewport automatically -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MinimaList</title>
+
+        <link rel="stylesheet" href="list.css" />
     </head>
     <body>
+        <header>
+            <div class="title"><h1>MinimaList</h1></div> 
+            <div><h2>[User's name]'s To Do List for the Week</h2></div>
+            <div><span class="material-symbols-outlined">ios_share</span></div>
+            <div><span class="dot" id="dot1"></span></div>
+            <div><span class="dot" id="dot2"></span></div>
+            <div><span class="dot" id="dot3"></span></div>
+            <div><span class="material-symbols-rounded" id="left">chevron_left</span></div>
+            <div><span class="material-symbols-rounded" id="right">chevron_right</span></div>
+        </header>
         <main>
-            <h1 id="title">MinimaList</h1>
-            <h2>[User's name]'s To Do List for the Week</h2>
-            <span class="material-symbols-outlined">ios_share</span>
-            <span class="material-symbols-rounded">chevron_left</span>
-            <span class="material-symbols-rounded">chevron_right</span>
             <section>
-                <table>
+                <table class="list">
                     <tr>
-                        <th>Mon 6.12</th>
-                        <th>Tues 6.13</th>
-                        <th>Wed 6.14</th>
-                        <th>Thu 6.15</th>
-                        <th>Fri 6.16</th>
-                        <th>Sat 6.17</th>
-                        <th>Sun 6.18</th>
+                        <th><div class="day">Sun </div><div class="date">6.11</div></th>
+                        <th><div class="day">Mon </div><div class="date">6.12</div></th>                        
+                        <th><div class="day">Tue </div><div class="date">6.13</div></th>
+                        <th><div class="day">Wed </div><div class="date">6.14</div></th>                        
+                        <th><div class="day">Thu </div><div class="date">6.15</div></th>                        
+                        <th class="active"><div class="day">Fri </div><div class="date">6.16</div></th>                  
+                        <th><div class="day">Sat </div><div class="date">6.17</div></th>
                     </tr>
                     <tr>
-                        <th>clean room</th>
-                        <th>quiz 7</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th class="active"><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
                     </tr>
                     <tr>
-                        <th>lunch w/friend at 1pm</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th class="active"><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
                     </tr>
                     <tr>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th class="active"><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
                     </tr>
                     <tr>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th class="active"><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
                     </tr>
                     <tr>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th class="active"><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
                     </tr>
                     <tr>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th class="active"><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
                     </tr>
                     <tr>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th class="active"><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
                     </tr>
                     <tr>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th class="active"><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
                     </tr>
                     <tr>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th class="active"><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
                     </tr>
                     <tr>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
-                        <th>__________</th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th class="active"><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
+                        <th><input type="text" class="list-item" placeholder=" " autocomplete="off" class="form-control-material" /></th>
                     </tr>
                 </table>
             </section>
         </main>
     </body>
-    <footer>
-        <button>Clear All</button>
-    </footer>
 </html>
