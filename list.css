@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+    background-color: #fff;
+    padding: 25px;
+}
+
+header {
+    position: relative;
+    color: #8da290;
+    font-size: 25px;
+    margin-top: -3.5%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    position: relative;
+    color: #bec7b4;
+    font-size: 20px;
+    margin-top: -2%;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    right: 139px;
+    margin-top: -6.9%;
+    font-size: 27px;
+}
+
+.material-symbols-rounded {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    margin-top: -7.1%;
+    font-size: 35px;
+}
+
+#left {
+    right: 61px;
+}
+
+#right {
+    right: 4px;
+}
+
+.dot {
+    position: absolute;
+    z-index: -1;
+    margin-top: -7.5%;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#dot1 {
+    right: 0px;
+    background-color: #bec7b4;
+}
+
+#dot2 {
+    right: 55px;
+    background-color: #bec7b4;
+}
+
+#dot3 {
+    right: 130px;
+    background-color: #f2cbbb;
+}
+
+/* if there's time */
+/* .button:hover {
+    filter: brightness(85%);
+} */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    position: relative;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: #505050;
+    font-stretch: extra-condensed;
+    border-spacing: 13px;
+    text-align: left;
+}
+
+.active {
+    color: #f2cbbb;
+    border-bottom: 2px solid #f2cbbb !important;
+    .date {
+        color: #f2cbbb;
+    }
+}
+
+.list tr:first-child th {
+    font-size: 19px;
+    border-bottom: 2px solid #505050;
+}
+
+th,
+td {
+  border-bottom: 1px solid #505050;
+  width: 100px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.day, 
+.date {
+    display: inline;
+}
+
+.date {
+    margin-left: 57%;
+    color: #888888;
+    filter: brightness(100%);
+}
+
+.list-item {
+    color: #505050;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    width: 97%;
+    height: 95%;
+    border-radius: 5%;
+}
+
+.list-item:hover {
+    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 60%);
+}
